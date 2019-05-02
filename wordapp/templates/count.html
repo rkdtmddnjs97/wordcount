@@ -1,0 +1,45 @@
+
+
+
+<body>
+<div>
+<h1>총 단어 수: {{total}}</h1>
+    <!-- 총 단어 수 데이터 받아서 적기 -->
+    <br>
+<h3>
+    입력한 텍스트:{{fulltext}}
+    <br>
+    단어 count:
+    {%for word, countTotal in dictionary%}
+    {{word}}=>{{countTotal}}
+     <br>
+    {%endfor%}
+</h3>
+
+<a href="{%url 'home'%}">GO_TO_HOME</a>
+</div>
+</body>
+
+<style>
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background :url('http://i.imgur.com/WTWl8Yo.jpg')  no-repeat center center fixed #cccccc; 
+    -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;
+
+}
+
+div {
+    width: 530px;
+    height: 424px;
+    padding-top: 150px;
+    padding-left: 20px;
+    margin: 0px auto;
+    color:rgb(255, 255, 255);
+   }
+a{
+    color:darkblue;
+}
+
+</style>

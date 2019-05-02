@@ -1,0 +1,62 @@
+<head>
+    <!-- css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>  
+    <div class="container">
+ 
+        <h1 class="text-primary">WordCount</h1>
+        <form action="{%url 'count'%}">
+            <textarea col="10" rows="10" name="fulltext"></textarea>
+            <br>
+            <button type="button" class="btn btn-dark">
+                <input type="submit" value="Count!">
+            </button>
+        </form>
+
+        <a href="{%url 'about'%}"  class="text-white bg-dark">ABOUT</a>
+    </div>
+</body>
+
+<style>
+
+  body {
+    margin: 0px;
+    padding: 0px;
+    background :url('http://blogthumb2.naver.net/20100812_198/siksik69_1281591566146HLjAd_JPEG/2010-08-12_14%3B38%3B05.jpg?type=w2')  no-repeat center center fixed #cccccc; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;
+   }
+   div {
+    width: 530px;
+    height: 424px;
+    opacity: 0.6;
+    padding-top: 150px;
+    padding-left: 20px;
+    margin: 0px auto;
+   }
+   textarea {
+    background:hsla(0, 0%, 100%, 0.6);
+    padding: 20px;
+    width: 25%;
+    margin: 0px auto;
+    border-radius: 20px;
+   }
+   input{
+     all:unset;
+   }
+
+</style>
